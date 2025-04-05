@@ -12,7 +12,8 @@ Resgistrate en DevSta
         </div>
         <div class="md:w-4/12  bg-white p-6 rounded-lg shadow-xl">
             {{-- action es a donde queremos enviar la info del formulario --}}
-            <form action="/crear-cuenta" method="post" novalidate>
+            <form action="{{ route('register') }}" method="post" novalidate>
+                {{-- CORRESPONDE AL ACTION "/crear-cuenta" --}}
                 @csrf
                 <div class="md-5">
                     {{-- diseño del lavel --}}
